@@ -73,6 +73,7 @@ export default {
       ref: null,
       args: null,
       visibility: '',
+      boundary: 'window',
       placement: 'bottom',
       positionFixed: false,
       modifiers: {},
@@ -97,6 +98,7 @@ export default {
     },
     popperOptions() {
       return {
+        boundary: this.boundary,
         placement: this.placement,
         positionFixed: this.positionFixed,
         modifiers: {
