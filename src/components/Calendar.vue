@@ -442,7 +442,7 @@ export default {
         fromPage = addPages(this.maxPage_, 1 - this.count);
       }
       // Create the new pages
-      let pages = [];
+      const pages = [];
       for (let i = 0; i < this.count; i++) {
         pages.push(this.buildPage(addPages(fromPage, i), ignoreCache));
       }
